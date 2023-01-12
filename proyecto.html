@@ -1,0 +1,25 @@
+
+<html>
+    <head>
+        <script type="application/javascript">
+                function draw()
+                {
+                    var canvas = document.getElementById("canvas");
+                    if(canvas.getContext)
+                    {
+                        var ctx = canvas.getContext("2d");
+    
+                        
+                        ctx.fillStyle = "rgb(0,0,0)";
+                        ctx.fillRect  (300,100,300,100);
+                  
+    
+                    }
+                }
+    
+        </script>
+    </head>
+    <body onload="draw();">
+        <canvas id="canvas" width="500" height="500"></canvas>
+    </body>
+    </html>
